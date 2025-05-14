@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-cloudbotproject-dev-7b9dc-authRole",
+      "UnauthRoleArn": "arn:aws:iam::717279696708:role/amplify-cloudbotproject-dev-7b9dc-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::717279696708:role/amplify-cloudbotproject-dev-7b9dc-authRole",
+      "Region": "eu-central-1",
+      "DeploymentBucketName": "amplify-cloudbotproject-dev-7b9dc-deployment",
+      "UnauthRoleName": "amplify-cloudbotproject-dev-7b9dc-unauthRole",
+      "StackName": "amplify-cloudbotproject-dev-7b9dc",
+      "StackId": "arn:aws:cloudformation:eu-central-1:717279696708:stack/amplify-cloudbotproject-dev-7b9dc/99211470-30f8-11f0-a4ca-02151d310639",
+      "AmplifyAppId": "d2m9bd2y51wdhg"
+    },
+    "categories": {
+      "auth": {
+        "cloudbotproject8bd9c2b4": {}
+      },
+      "api": {
+        "cloudbotproject": {}
+      }
+    }
+  }
+}
