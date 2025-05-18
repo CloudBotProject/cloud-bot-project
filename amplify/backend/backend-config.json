@@ -1,13 +1,13 @@
 {
   "api": {
-    "cloudbotproject": {
+    "cloudproject": {
       "dependsOn": [
         {
           "attributes": [
             "UserPoolId"
           ],
           "category": "auth",
-          "resourceName": "cloudbotproject8bd9c2b4"
+          "resourceName": "cloudprojected2896cd"
         }
       ],
       "output": {
@@ -16,7 +16,7 @@
             {
               "authenticationType": "AMAZON_COGNITO_USER_POOLS",
               "userPoolConfig": {
-                "userPoolId": "authcloudbotproject8bd9c2b4"
+                "userPoolId": "authcloudprojected2896cd"
               }
             }
           ],
@@ -33,7 +33,7 @@
     }
   },
   "auth": {
-    "cloudbotproject8bd9c2b4": {
+    "cloudprojected2896cd": {
       "customAuth": false,
       "dependsOn": [],
       "frontendAuthConfig": {
@@ -49,7 +49,9 @@
           "EMAIL"
         ],
         "socialProviders": [],
-        "usernameAttributes": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
         "verificationMechanisms": [
           "EMAIL"
         ]

@@ -1,10 +1,10 @@
 {
-  "AppSyncApiName": "cloudbotproject",
+  "AppSyncApiName": "cloudproject",
   "DynamoDBBillingMode": "PAY_PER_REQUEST",
   "DynamoDBEnableServerSideEncryption": false,
   "AuthCognitoUserPoolId": {
     "Fn::GetAtt": [
-      "authcloudbotproject8bd9c2b4",
+      "authcloudprojected2896cd",
       "Outputs.UserPoolId"
     ]
   }
