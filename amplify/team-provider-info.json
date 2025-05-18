@@ -17,6 +17,12 @@
       },
       "api": {
         "cloudproject": {}
+      },
+      "function": {
+        "fulfillBot": {
+          "deploymentBucketName": "amplify-cloudproject-dev-27560-deployment",
+          "s3Key": "amplify-builds/fulfillBot-7972572b6c7269785769-build.zip"
+        }
       }
     }
   }
