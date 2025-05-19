@@ -321,30 +321,29 @@ const About = () => {
                 <div className={`${styles.sectionContent} ${styles.animateOnView}`}>
                     <h2>Our Team</h2>
                     <p className={styles.teamIntro}>
-                        CloudBot is built by a passionate team of cloud specialists and AI
-                        experts dedicated to making cloud technology more accessible.
+                        CloudBot is built by a passionate team of developers who are dedicated to simplifying cloud management. We believe that cloud computing should be accessible to everyone, and we work tirelessly to make that a reality.
                     </p>
                     <div className={styles.teamMembers}>
                         <div className={styles.teamMember}>
                             <div className={styles.memberAvatar}>
                                 <div className={styles.placeholderAvatar}></div>
                             </div>
-                            <h3>Alex Rivera</h3>
-                            <p>Founder & AI Engineer</p>
+                            <h3>Marah Natsheh & Reema Kusa</h3>
+                            <p>Frontend Developers</p>
                         </div>
                         <div className={styles.teamMember}>
                             <div className={styles.memberAvatar}>
                                 <div className={styles.placeholderAvatar}></div>
                             </div>
-                            <h3>Sam Chen</h3>
-                            <p>Cloud Architecture</p>
+                            <h3>Omar Estatieh</h3>
+                            <p>Backend Developer</p>
                         </div>
                         <div className={styles.teamMember}>
                             <div className={styles.memberAvatar}>
                                 <div className={styles.placeholderAvatar}></div>
                             </div>
-                            <h3>Jordan Lee</h3>
-                            <p>UX Designer</p>
+                            <h3>Humam Dwikat</h3>
+                            <p>Devops Engineer</p>
                         </div>
                     </div>
                 </div>
@@ -432,7 +431,7 @@ const About = () => {
                             </div>
                             <div>
                                 <h3>Location</h3>
-                                <p>123 Cloud Street, San Francisco, CA</p>
+                                <p>123 An Najah Street, Nablus, PS</p>
                             </div>
                         </div>
                     </div>
