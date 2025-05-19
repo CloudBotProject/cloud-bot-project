@@ -12,7 +12,5 @@
       "StartCommand": "npm run dev"
     }
   },
-  "providers": [
-    "awscloudformation"
-  ]
+  "providers": ["awscloudformation"]
 }
