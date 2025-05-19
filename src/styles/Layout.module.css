@@ -1,0 +1,375 @@
+/* src/components/Layout.module.css */
+:root {
+  --primary: #4a86e8;
+  --primary-dark: #3a76d8;
+  --accent: #34eba8;
+  --dark: #2c3e50;
+  --light: #f9fbff;
+  --gray: #f0f4f8;
+  --text: #333;
+  --shadow-sm: 0 2px 5px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 8px rgba(74, 134, 232, 0.15);
+  --shadow-lg: 0 8px 16px rgba(74, 134, 232, 0.2);
+  --transition: all 0.3s ease;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--text);
+  background-color: var(--light);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.95);
+  color: var(--text);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.navScrolled {
+  box-shadow: var(--shadow-md);
+  padding: 0.75rem 2rem;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cloudIcon {
+  position: relative;
+  height: 24px;
+  width: 36px;
+}
+
+.cloudIcon span {
+  position: absolute;
+  background-color: var(--primary);
+  border-radius: 50%;
+}
+
+.cloudIcon span:nth-child(1) {
+  width: 16px;
+  height: 16px;
+  top: 4px;
+  left: 0;
+}
+
+.cloudIcon span:nth-child(2) {
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 8px;
+}
+
+.cloudIcon span:nth-child(3) {
+  width: 14px;
+  height: 14px;
+  top: 6px;
+  left: 18px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.5px;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  align-items: center;
+}
+
+.navLink {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  padding: 0.5rem 0;
+  transition: var(--transition);
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary);
+  transition: var(--transition);
+}
+
+.navLink:hover {
+  color: var(--primary);
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+.logoutBtn {
+  background-color: var(--primary);
+  color: white;
+  padding: 0.5rem 1.25rem;
+  border-radius: 50px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.logoutBtn:hover {
+  background-color: var(--primary-dark);
+  box-shadow: var(--shadow-md);
+  color: white;
+}
+
+.logoutBtn::after {
+  display: none;
+}
+
+.mobileMenuToggle {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.mobileMenuToggle span {
+  width: 30px;
+  height: 2px;
+  background-color: var(--dark);
+  transition: var(--transition);
+}
+
+/* Header Styling */
+.header {
+  background: linear-gradient(135deg, #f3fcfa 0%, #eef5ff 100%);
+  padding: 4rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.headerContent {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.headerTitle {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: var(--text);
+  letter-spacing: -1px;
+}
+
+.headerSubtitle {
+  font-size: 1.25rem;
+  color: #5a6c7d;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.headerGraphic {
+  margin-top: 2rem;
+  height: 80px;
+  position: relative;
+}
+
+.cloudCluster {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.cloud {
+  width: 60px;
+  height: 30px;
+  background-color: white;
+  border-radius: 30px;
+  position: absolute;
+  box-shadow: var(--shadow-sm);
+  opacity: 0.8;
+}
+
+.cloud:nth-child(1) {
+  left: calc(50% - 70px);
+  top: 10px;
+  animation: float 6s ease-in-out infinite;
+}
+
+.cloud:nth-child(2) {
+  left: calc(50% - 20px);
+  top: 0;
+  width: 80px;
+  height: 40px;
+  animation: float 7s ease-in-out infinite 1s;
+}
+
+.cloud:nth-child(3) {
+  left: calc(50% + 30px);
+  top: 15px;
+  width: 55px;
+  height: 28px;
+  animation: float 5s ease-in-out infinite 0.5s;
+}
+
+.cloud::before,
+.cloud::after {
+  content: '';
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.cloud::before {
+  width: 25px;
+  height: 25px;
+  left: 10px;
+  bottom: 10px;
+}
+
+.cloud::after {
+  width: 30px;
+  height: 30px;
+  right: 10px;
+  bottom: 10px;
+}
+
+/* Main Content Styling */
+.main {
+  flex: 1;
+  padding: 3rem 2rem;
+  background-color: white;
+}
+
+.mainContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: var(--dark);
+  color: white;
+  padding: 1.5rem;
+}
+
+.footerContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem;
+  }
+  
+  .mobileMenuToggle {
+    display: flex;
+  }
+  
+  .navLinks {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background-color: white;
+    padding: 0;
+    gap: 0;
+    box-shadow: var(--shadow-md);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  
+  .menuOpen {
+    max-height: 300px;
+  }
+  
+  .navLinks li {
+    width: 100%;
+  }
+  
+  .navLink {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .logoutBtn {
+    margin: 1rem;
+    text-align: center;
+    display: block;
+  }
+  
+  .header {
+    padding: 3rem 1rem;
+  }
+  
+  .headerTitle {
+    font-size: 2rem;
+  }
+  
+  .main {
+    padding: 2rem 1rem;
+  }
+}
