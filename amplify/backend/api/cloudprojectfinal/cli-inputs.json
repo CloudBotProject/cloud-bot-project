@@ -1,7 +1,7 @@
 {
   "version": 1,
   "serviceConfiguration": {
-    "apiName": "cloudproject",
+    "apiName": "cloudprojectfinal",
     "serviceName": "AppSync",
     "defaultAuthType": {
       "mode": "API_KEY",
@@ -10,7 +10,7 @@
     "additionalAuthTypes": [
       {
         "mode": "AMAZON_COGNITO_USER_POOLS",
-        "cognitoUserPoolId": "authcloudprojected2896cd"
+        "cognitoUserPoolId": "authcloudprojectfinal103d6303"
       }
     ]
   }

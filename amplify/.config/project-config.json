@@ -1,6 +1,6 @@
 {
   "whyContinueWithGen1": "Prefer not to answer",
-  "projectName": "CloudProject",
+  "projectName": "CloudProjectFinal",
   "version": "3.1",
   "frontend": "javascript",
   "javascript": {
@@ -12,5 +12,7 @@
       "StartCommand": "npm run dev"
     }
   },
-  "providers": ["awscloudformation"]
+  "providers": [
+    "awscloudformation"
+  ]
 }
