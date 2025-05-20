@@ -22,7 +22,10 @@ function App({ signOut, user }) {
             <main>
                 <Routes>
                     <Route path="/" element={<Home user={user} />} />
-                    <Route path="/dashboard" element={<Dashboard user={user} />} />
+                    <Route
+                        path="/dashboard"
+                        element={<Dashboard user={user} />}
+                    />
                     <Route path="/about" element={<About />} />
                 </Routes>
             </main>
