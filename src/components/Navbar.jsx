@@ -37,30 +37,37 @@ const Navbar = ({ signOut }) => {
                 </div>
 
                 <ul className={`${styles.navLinks} ${menuOpen ? styles.menuOpen : ""}`}>
-                    <li>
-                        <Link to="/" className={styles.navLink}>
-                            Home
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="/about" className={styles.navLink}>
-                            About
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="/dashboard" className={styles.navLink}>
-                            Dashboard
-                        </Link>
-                    </li>
-                    <li>
-                        <button
-                            onClick={signOut}
-                            className={`${styles.navLink} ${styles.logoutBtn}`}
-                        >
-                            Logout
-                        </button>
-                    </li>
-                </ul>
+    <li>
+        <Link to="/" className={styles.navLink}>
+            Home
+        </Link>
+    </li>
+    <li>
+        <Link to="/about" className={styles.navLink}>
+            About
+        </Link>
+    </li>
+    <li>
+        <Link to="/dashboard" className={styles.navLink}>
+            Dashboard
+        </Link>
+    </li>
+    <li>
+        <Link to="/interact" className={styles.navLink}>
+            Interact
+        </Link>
+    </li>
+    <li>
+        <button
+            onClick={signOut}
+            className={`${styles.navLink} ${styles.logoutBtn}`}
+        >
+            Logout
+        </button>
+    </li>
+</ul>
+
+                
             </nav>
 
             <header className={styles.header}>
