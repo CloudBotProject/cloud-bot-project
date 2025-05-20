@@ -112,6 +112,7 @@ const Home = () => {
 
     return (
         <div className={`chatbot-container ${darkMode ? "dark" : ""}`}>
+            <h1>hello</h1>
             <div className="chat-header">
                 <div className="header-content">
                     <div className="avatar">
