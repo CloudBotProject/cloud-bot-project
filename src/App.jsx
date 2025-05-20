@@ -8,6 +8,7 @@ import PropTypes from "prop-types";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Interact from "./components/Interact";
 
 import Home from "./pages/Home";
 import Dashboard from "./pages/Dashboard";
@@ -27,6 +28,8 @@ function App({ signOut, user }) {
                         element={<Dashboard user={user} />}
                     />
                     <Route path="/about" element={<About />} />
+                    <Route path="/interact" element={<Interact user={user} />} />
+
                 </Routes>
             </main>
             <Footer />
